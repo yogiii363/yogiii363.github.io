@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kydots</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  </head>
+<body>
+  <div class="information" id="popup">
+    <p>Click <b>Job</b> or <b>notification icon</b> for viewing activity</p>
+    <p>Click <b>See More</b> in Course Details to expand</p>
+    <p>Click <b>Home</b> to go to first screen</p>
+    <p>Click <b>Profile pic</b> to go to profile page</p>
+    <button id="close">Close</button>
+  </div>
+  <div class="jobpopup" style="align-items: center;">
+    <div class="jobtitle">
+      <img src="images/avatar-not-1.jpg" alt="Avatar" class="job-avatar">
+      <p class="job-title-details">User Experience Designer, Delhi, India</p>
+    </div>
+    <div class="title-apply">
+      <h5 class="quick-apply">QUICK APPLY</h5>
+      <hr class="divide">
+      <div class="data-for-job">
+        <h5>UPLOAD YOUR RESUME</h5>
+        <br>
+        <h6><span style="font-weight: bold;">DOC,DOCX or PDF</span><span style="font-weight: normal;"> file </span><span style="font-weight: bold;">(Max 5mb)</span></h5>
+        <br>
+        <div class="resume-drop">
+          <p style="font-weight: bold;">Drag and Drop file</p>
+          <p>or</p>
+          <a  style="font-weight: bold;">Select Files</a>
+        </div>
+        <br>
+        <button>NEXT</button>
+        <br>
+      </div>
+      <br>
+      <button>Import data from LinkedIn</button>
+      <br>
+    </div>
+  </div>
+  <div class="popuptext" style="align-items: center;">
+    <div class="notification-block">
+      <ul class="list-unstyled" style="padding-bottom: 0%;">
+        <li class="notification-li">
+            <p class="notification-li">Notification<span style="display:inline-block; width: 55%;"></span> <span style="color: #FFD700;">Unread:4 &nbsp;</span> Mark all read</p>
+        </li>
+        <li class="notification-li-people"">
+            <img src="images/avatar-not-1.jpg" alt="Avatar" class="avatar-notification">
+            <p style="padding: 3%;">Varun Garg likes a photo you shared</p>
+        </li> 
+        <li class="notification-li-people">
+            <img src="images/avatar-not-2.png" alt="Avatar" class="avatar-notification">
+            <p style="padding: 3%;">Chirag sent you a friend request</p>
+        </li> 
+        <li class="notification-li-people">
+            <img src="images/avatar-not-3.png" alt="Avatar" class="avatar-notification">
+            <p style="padding: 3%;">People want to know about your company</p>
+        </li> 
+        <li class="notification-li-people">
+            <img src="images/avatar-not-4.png" alt="Avatar" class="avatar-notification">
+            <p style="padding: 3%;">You have a new connection request</p>
+        </li> 
+      </ul>
+      </div>
+      <div class="notification-more" ><p>View More</p></div>
+  </div>
+	<nav class="navbar navbar-expand-md navbar-dark" id="unblurred" >
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+    </div>
+    <div class="mx-auto" style="width: 200%; text-align: center;">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <a class="navbar-brand" href="">Career Graph</a>
+        <a class="navbar-brand" id="job" style="color: white;">Job</a>
+        <a class="navbar-brand" href="">Similar Candidates</a>      
+        <a class="navbar-brand" href="">Mentor</a>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href=""><i class="fa fa-search"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=""> <i class="fa fa-envelope"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="notification"><i class="fa fa-bell"></i></a>
+            </li>
+            <li class="nav-item">
+            	<a href="../profile/index.html"><img src="images/img_avatar2.png" alt="Avatar" class="avatar"></a>
+            </li>
+        </ul>
+    </div>
+</nav><br>
+    
+    <!-- Page Content -->
+    <div class="container-fluid col-sm-11 shad" style="background-color: white;">
+
+      <div class="container-fluid row center-div">
+        <div class="container-fluid enrollleft">
+        	<p>
+        	<span style="float:left; margin-right: 5%">
+        	<img src="images/lion.jpg" class="profile_pic shad" alt="profile_pic">
+          	</span>
+            <h5 style="width: 100%;">James Language Classes</h5>
+            <p style="width: 100%;">Specialist in: <span style="font-weight: bold;">French, English, Spanish and Hindi</span></p>
+        	</p>       	
+        </div>
+        <div class="right">
+        	<div id="floater">
+        	</div>
+        	<span>
+        		<button  class="Enroll" type="submit" >Enroll Now</button>
+
+        		<button  class="save" type="submit" ><font color="#2874A6">Save</font></button>
+        	</span>
+
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <br>
+    <!--How we offer-->
+    <div class="container-fluid col-sm-11 shad" style="background-color: white;">
+
+      <div class="container-fluid row">
+        <div class="container-fluid offer-left">
+        <h3>How we offer</h3>
+        <br>
+        <ul>
+          <li class="ul-prov">Provision 1</li>
+          <li class="ul-prov">Provision 2</li>
+          <li class="ul-prov">Provision 3</li>
+          <li class="ul-prov">Provision 4</li>
+          <li class="ul-prov">Provision 5</li>
+        </ul>
+        </div>        
+      </div>
+      <!-- /.row -->
+    </div>
+    <br>
+
+
+
+
+
+
+    <div class="wrapper">  
+        <div class="mainContent">
+
+
+        	<div class="container-fluid col-sm-12 shad course" align="left" style="background-color: white;">
+
+		      <div class="container-fluid row ">
+		        <div class="container-fluid offer-left">
+		        <h6>Course Details</h6>
+		        <br>
+		        <ul>
+		          <li style="width: 100%; margin: 5px;">What exactly is Artificial Intelligence? It is basically the science and engineering of making intelligent machines, especially computer programs.
+		          The ability to invent intelligent machines has fascinated humans since the ancient times. Researchers are creating systems and programs that could mimic human thoughts and try doing things that human could do. The artificial Intelligence is a combination of computer science, physiology and philosophy.</li>
+		          <li style="width: 100%; margin: 5px;">
+		          The Artificial Intelligence has come a long way from the old days. It was with the invention of the computers that the Artificial Intelligence method began to maneuver researchers. The technology was finally available and seemed to stimulate intelligent behavior. Intelligent here means, things which could be done at a faster pace and thinking than a human mind. The insights and theory brought about the Artificial Intelligence will set a trend in the future. The current products are just the beginning of the future trend.</li>
+		          <li style="width: 100%; margin: 5px;">The Artificial Intelligence has come a long way from the old days. It was with the invention of the computers that the Artificial Intelligence method began to maneuver researchers. The technology was finally available and seemed to stimulate intelligent.</li>
+		        </ul>
+		        <div id="demo" class="collapse">
+		        <h6>Method we follow</h6>
+		        <br>
+		        <ul>
+		          <li style="width: 100%; margin: 5px;">The Artificial Intelligence has come a long way from the old days. It was with the invention of the computers that the Artificial Intelligence method began to maneuver researchers. The technology was finally available and seemed to stimulate intelligent behavior. Intelligent here means, things which could be done at a faster pace and thinking than a human mind. The insights and theory brought about the Artificial Intelligence will set a trend in the future. The current products are just the beginning of the future trend.</li>
+		          <li style="width: 100%; margin: 5px;">The Artificial Intelligence has come a long way from the old days. It was with the invention of the computers that the Artificial Intelligence method began to maneuver researchers. The technology was finally available and seemed to stimulate intelligent behavior. Intelligent here means, things which could be done at a faster pace and thinking than a human mind. The insights and theory brought about the Artificial Intelligence will set a trend in the future. The current products are just the beginning of the future trend.</li>
+		        </ul>
+		        </div>
+		        <hr size="2px" color="#2874A6">
+		        <button onclick="myFunction()" id="see" class="seemore" data-toggle="collapse" data-target="#demo" style="outline: none;">See More</button>
+		        </div>        
+		      </div>
+		      <!-- /.row -->
+		    </div>
+		    <br>
+
+		    <div class="container-fluid col-sm-12 shad course" align="left" style="background-color: white;">
+
+		      <div class="container-fluid row ">
+		        <div class="container-fluid offer-left">
+		        <div class="container-fluid enrollleft" style="width: 100%">
+		          <p >
+		          <span style="float:left; margin-right: 5%">
+		          <img src="images/lion.jpg" class="profile_pic shad" alt="profile_pic">
+		            </span>
+		            <h5 style="width: 100%; vertical-align: center; margin-top: 5%;">James Language Classes <button  class="coaching-button" type="submit" >Book</button> </h5>
+		          </p>     
+
+		        </div>
+		        <div class="offer-left coaching-details">
+		          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum libero, dignissim vel tortor nec, sollicitudin laoreet odio. Donec laoreet maximus bibendum. Nunc porttitor urna quis tortor porta sollicitudin. Aliquam sed efficitur lorem. Morbi elementum pretium nunc, sit amet iaculis erat fringilla placerat. Aenean eu pulvinar turpis. Donec fringilla bibendum ligula sed consectetur.Phasellus quis urna venenatis, venenatis risus id, ornare nisl. Quisque in turpis magna. Aenean convallis mauris arcu, sit amet dapibus neque imperdiet vitae. Mauris sollicitudin orci eget nisi condimentum aliquam. Suspendisse rhoncus vulputate mauris vel vulputate. Pellentesque condimentum suscipit ante id aliquet. Ut nunc odio, facilisis sit amet lorem et, faucibus fermentum turpis. Sed posuere erat augue, a euismod orci faucibus vitae. Cras pretium nunc eu leo fringilla fringilla.Etiam quis risus laoreet, tempus sem sed, volutpat ex. Mauris scelerisque magna et ante consequat finibus. Vivamus sed ex nulla. Donec gravida porta tempor. Fusce vel tortor in quam tempor efficitur. In vehicula, lacus non efficitur varius, metus dolor viverra dolor, ac tincidunt velit lacus a ante. Etiam condimentum in risus et rutrum.Donec dapibus eu quam at dignissim. Nam libero mi, gravida vitae fringilla ut, sodales a risus. Nam tempor diam nec eros imperdiet tristique.</p>
+		          <ul class="list-unstyled">
+		            <li class="ul-prov"><p><i class="fa fa-map-marker" aria-hidden="true" style="color: #2874A6"></i> 7th Floor, C, Infinity Tower, DLF Cyber City,<br> DLF Phase 1, Sector 24, Gurugram, Haryana<br>  122002</p></li>
+		            <li class="ul-prov"><i class="fa fa-envelope" aria-hidden="true" style="color: #2874A6"></i>  google@google.com</li>
+		            <br>
+		            <li class="ul-prov"><i class="fa fa-globe" aria-hidden="true"  style="margin-top: 5%; color: #2874A6"></i>  https//google.com</li>
+		          </ul>
+		        </div>
+		        </div>
+		        </div>        
+		      </div>
+		      <br>
+          <div style="position: relative; text-align: center;">
+            <img class="imgstudent" src="images/student.jpg">
+            <div class="above-student">
+              <div style="font-weight: bold;"><p>How our students feel about us</p></div>
+              <div class="review">
+                <p style="padding-top: 10px; margin-left: 4%; padding-bottom: 20px;">
+                  Abriel Jonas<br><span style="font-size: 15px; line-height: 1px; color: #2874A6">Microsoft</span><span style="font-size: 13px; line-height: 1px; color: #7a7a7a;">
+                  <br>ras pretium nunc eu leo fringilla fringilla.Etiam quis risus laoreet, tempus sem sed, volutpat ex. Mauris scelerisque magna et ante consequat finibus. Vivamus sed ex nulla. Donec gravida porta tempor.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+		     
+		  	
+
+
+        </div><!-- No Spaces   
+     --><div class="sideBar row">
+
+
+     		<div class="col-sm-12 container-fluid other-class">
+          <i class="fa fa-bookmark" aria-hidden="true" style="float: left; transform: rotate(270deg);"></i><p> $ 500/month</p>
+		      
+          <img src="images/lion.jpg" alt="profile_pic" class="other-class-pic">
+            <h6>Agrawal Coaching Center</h6>
+            <p>Gulab Estate, T2 Terminal International Airport, MTNL, Sakinaka, Sakinaka, Mumbai, Maharashtra 400072</p>
+            <h6>Specialist in</h6>
+		      <div class="container-fluid" >
+		        <button>Integration</button>
+		        <button>Algorithm</button>
+		        <button>Real Numbers</button>
+		      </div>
+		      <div>
+		        <p style="margin-top: 2%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum libero.</p>
+		      </div>
+		      <hr>
+		      <div style="margin-bottom: 4%;padding-bottom: 4%">
+		        <a class="more-class-view" style="color: #2874A6; font-weight: bold; ">VIEW DETAILS</a>
+		      </div>
+		    </div>
+
+		    <div class="col-sm-12 container-fluid other-class">
+		      <div>
+		        <p><i class="fa fa-bookmark" aria-hidden="true" style="float: left; transform: rotate(270deg);"></i> $ 500/month</p>
+		        <img src="images/lion.jpg" alt="profile_pic" class="other-class-pic">
+		        <h6>Agrawal Coaching Center</h6>
+		        <p>Gulab Estate, T2 Terminal International Airport, MTNL, Sakinaka, Sakinaka, Mumbai, Maharashtra 400072</p>
+		        <h6>Specialist in</h6>
+		      </div>
+		      <div class="container-fluid" >
+		        <button>Integration</button>
+		        <button>Algorithm</button>
+		        <button>Real Numbers</button>
+		      </div>
+		      <div>
+		        <p style="margin-top: 2%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum libero.</p>
+		      </div>
+		      <hr>
+		      <div style="margin-bottom: 4%;padding-bottom: 4%">
+		        <a class="more-class-view" style="color: #2874A6; font-weight: bold;">VIEW DETAILS</a>
+		      </div>
+		    </div>
+
+		    <div class="col-sm-12 container-fluid other-class">
+		      <div>
+		        <p><i class="fa fa-bookmark" aria-hidden="true" style="float: left; transform: rotate(270deg);"></i> $ 500/month</p>
+		        <img src="images/lion.jpg" alt="profile_pic" class="other-class-pic">
+		        <h6>Agrawal Coaching Center</h6>
+		        <p>Gulab Estate, T2 Terminal International Airport, MTNL, Sakinaka, Sakinaka, Mumbai, Maharashtra 400072</p>
+		        <h6>Specialist in</h6>
+		      </div>
+		      <div class="container-fluid" >
+		        <button>Integration</button>
+		        <button>Algorithm</button>
+		        <button>Real Numbers</button>
+		      </div>
+		      <div>
+		        <p style="margin-top: 2%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum libero.</p>
+		      </div>
+		      <hr>
+		      <div style="margin-bottom: 4%;padding-bottom: 4%">
+		        <a class="more-class-view" style="color: #2874A6; font-weight: bold;">VIEW DETAILS</a>
+		      </div>
+		    </div>
+        <div class="col-sm-12 container-fluid" style="background-color: #103356;">
+          <button class="seemore-side" style="outline: none;">View More</button>
+        </div>
+
+
+
+
+            <!-- Sidebar content goes here -->
+        </div>  
+    </div>
+
+
+
+
+
+
+
+    <footer class="py-5" style="height: 15%">
+      <div class="container-fluid row">
+        <div class="container-fluid col-sm-3 sitename">
+          <h1 style="color: white;">kydots.ai</h1>
+        </div>
+        <div class="container-fluid col-sm-7 links">
+            <ul class="list-unstyled">
+            <li class="ul-foot">
+              <ul class="list-unstyled">
+                <li>About Us</li>
+                <li>Team</li>
+                <li>Careers</li>
+              </ul>
+            </li>
+            <li class="ul-foot">
+              <ul class="list-unstyled">
+              <li>Getting Started</li>
+              <li>Contact</li>
+              </ul>
+            </li>
+            <li class="ul-foot">
+              <ul class="list-unstyled">
+              <li>Feedback</li>
+              <li>FAQ</li>              
+            </ul>
+            </li>
+            <li class="ul-foot">
+              <ul class="list-unstyled">
+              <li>Terms</li>
+              <li>Privacy</li>
+              <li>Sitemap</li>
+              </ul>
+            </li>
+          </ul>
+        </div>     
+        <div class="container-fluid col-sm-2">
+          <i class="fa fa-facebook social w3-xlarge" aria-hidden="true"></i> 
+          <i class="fa fa-linkedin social w3-xlarge" aria-hidden="true"></i> 
+          <i class="fa fa-twitter social w3-xlarge" aria-hidden="true"></i> 
+        </div>
+        
+      </div>
+      
+      <!-- /.container -->
+
+   	</footer>
+   	<footer>
+   	    <div class="container" style="padding-bottom: 1%">
+        <p class="m-0 text-center text-white" style="letter-spacing: 2.5px;">Copyright &copy; 2017 KYDots.ai</p>
+      </div>
+    </footer>
+
+<script type="text/javascript" src="script/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+
+</body>
+</html>
